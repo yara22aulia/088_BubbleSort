@@ -83,12 +83,3 @@ void display()
 }
 
 int main()
-{
-    input();
-
-    bubbleSortArray();
-    display();
-
-    system("paise");
-    return 0;
-}
