@@ -56,8 +56,39 @@ void bubbleSortArray()
         cout << endl;
 
     } while (pass <= n - 1);
+void display()
+{
+    cout << endl;
+    cout << "================================" << endl;
+    cout << "Element Array yang telah tersusn" << endl;
+    cout << "================================" << endl;
+    cout << endl;
+    for (int j = 0; j < n; j++)
+    {
+        cout << arr[j];
+        if (j < n - 1)
+        {
+            cout << "--> ";
+        }
+    }
+    cout << endl;
+    cout << endl;
     
+    cout << "Jumlah pass = " << n - 1 << endl; 
+    cout << endl;
+    cout << endl;
+}
+int main()
+{
 
+    input();
+
+    bubbleSortArray();
+    display();
+
+    system("pause");
+    return 0;
+}
 
 
 
