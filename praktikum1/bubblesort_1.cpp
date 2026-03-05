@@ -82,4 +82,14 @@ void display()
     cout << endl;
 }
 
-int main()
+int main() 
+{
+    input();
+
+    bubbleSortArray();
+    display();
+
+    system("pause");
+    return 0;
+}
+
