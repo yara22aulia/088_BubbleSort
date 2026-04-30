@@ -4,12 +4,17 @@ using namespace std;
 int arr[20];        //membuat array dengan panjang data 20
 int n;              //membuat variable inputan n
 
-void input (){      //procedure input
-    while (true){
+void input (
+
+)
+{      //procedure input
+    while (true)
+    {
         cout << "Masukan Jumlah Data Pada Array :"; 
         cin >> n;
 
-        if (n <= 20){
+        if (n <= 20)
+        {
             break;
         }
         else{
@@ -27,12 +32,14 @@ void input (){      //procedure input
     }
 }
 
-void insertionsort(){  //procedure insertion sort
+void insertionsort(
+
+)
+{  
     int temp;
     int j;
 
-    for ( int i = 0; i < n; i++)
-    {
+    for ( int i = 0; i < n; i++){
         temp = arr[i];
         j = i - 1;
         while (j >= 0 && arr[j] > temp)
@@ -50,7 +57,10 @@ void insertionsort(){  //procedure insertion sort
 
 }
 
-void display(){
+void display(
+
+)
+{
     cout << endl;
     cout << "\n================";
     cout << "\nElement Array" << endl;
@@ -61,7 +71,9 @@ void display(){
     cout << endl;
 }
 
-int main(){
+int main(
+)
+{
     input();
     insertionsort();
     display();
