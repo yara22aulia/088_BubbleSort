@@ -8,8 +8,7 @@ public:
     int data;
     Node *next;
 
-        Node()
-    {
+        Node(){
         next = NULL;
     }
 };
