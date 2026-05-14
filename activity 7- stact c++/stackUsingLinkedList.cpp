@@ -9,8 +9,7 @@ public:
     Node *next;
 
         Node(){
-        next = NULL;
-    }
+        next = NULL;}
 };
 
 // stack class
